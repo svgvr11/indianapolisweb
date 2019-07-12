@@ -1,0 +1,27 @@
+@media (min-width: 1200px){
+    .navbar-nav{
+        position: absolute;
+        left: 70%;
+        transform: translatex(-70%);
+    }
+}
+
+.gris{
+    background: rgba(230, 0, 0, 0.075);
+}
+
+/* .fondo-prueba{
+    background:url(/img/slider/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+
+.top-nav-collapse{
+    background: rgba(230, 0, 0, 0.801) !important;
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
