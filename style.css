@@ -5,6 +5,19 @@
         transform: translatex(-70%);
     }
 }
+body{
+    background: black;
+}
+
+.first{
+    background:black;
+    color: #fff;
+    text-align: center;
+}
+
+div [class|="col"]{
+    border:3px solid #cf1e1e;
+}
 
 .gris{
     background: rgba(230, 0, 0, 0.075);
