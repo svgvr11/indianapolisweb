@@ -15,13 +15,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
 <!-- CSS propio -->
 <link rel="stylesheet" href="/style.css">
-<!-- 
-  Quizas lo saco despues -->
-  <!-- <script>
-    $('.carousel').carousel({
-      interval: 2000
-    })
-  </script> -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark gris scrolling-navbar fixed-top">
@@ -38,13 +31,13 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quienes somos</a>  
+              <a class="nav-link" href="#quienes">Quienes somos</a>  
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galería</a>
+              <a class="nav-link" href="#galeria-1">Galería</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
           </ul>
         </div>
@@ -69,11 +62,16 @@
                 </div>
           </div>
         </div>
-        <div class="container first">
+        <div id="quienes" class="container first">   
+          <div class="row">
+            <div class="col">
+                <h1>QUIENES SOMOS</h1>
+            </div>
+          </div>     
             <div class="row">
               <div class="col-4">
                 <img src="img/logoMision.svg" width="70" height="70" alt=""/>
-                <h4>Mision</h4>
+                <h4>Misión</h4>
                 <article>
                     Somos un taller de servicio automotriz
                     con proyección, inspirados en la reparación de tu vehículo. Ofrecemos un servicio 
@@ -82,7 +80,7 @@
               </div>
               <div class="col-4">
                 <img src="img/logoVision.svg" width="70" height="70" alt=""/>
-                <h4>Vision</h4>
+                <h4>Visión</h4>
                 <article>Como servicio automotriz buscamos posicionarnos en la IX Región como uno de los principales talleres accesibles para todos los usuarios.
                     Nos motiva seguir creciendo en nuestro rubro, entregando un servicio de calidad y dedicado para nuestros clientes.</article>
               </div>
@@ -105,7 +103,101 @@
               </div>
             </div>
         </div>
-      <br>
+        <div class="container first" id="galeria-1">
+            <div class="row">
+                <div class="col">
+                    <h1>GALERIA</h1>
+                </div>
+                <div class="card-columns" id="galeria">
+
+                  <!-- <div class="card">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                      <img src="img/galeria/galeria-1.jpg" alt="" class="card-img-top">
+                     </a>
+                  </div>
+
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <img src="/img/galeria/galeria-1.jpg" alt="" class="img-fluid rounded">
+                      </div>
+                    </div> -->
+
+                    <script>
+                      var imagenes = ['galeria-1','galeria-2', 'galeria-3', 'galeria-4', 'galeria-5', 'galeria-6', 'galeria-7', 'galeria-8'];
+                      var galeria = document.getElementById('galeria');
+                      for(imagen of imagenes){
+                        galeria.innerHTML += `
+                                  <div class="card">
+                              <a href="#" data-toggle="modal" data-target="#id${imagen}">
+                                <img src="img/galeria/${imagen}.jpg" alt="" class="card-img-top">
+                              </a>
+                            </div>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                              <img src="/img/galeria/${imagen}.jpg" alt="" class="img-fluid rounded">
+                                </div>
+                              </div>
+                        `
+                      }
+                    </script>
+                  </div>
+
+                </div>
+              </div>   
+              
+              <div class="container first" id="contacto">
+                <div class="row">
+                  <div class="col">
+                    <h1>CONTACTO</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                      <ul>
+                          <li> <img src="img/iconoFace.svg" width="30" height="30" alt="facebook"/> <a href="www.facebook.com/Servicio-Técnico-Automotriz-Indianapolis-516311385423082/" target="_blank" >facebook/Indianapolis</a> </li>
+                          <li> <img src="img/iconoWsp.svg" width="30" height="30" alt="whatsapp"/> +569 537 318 71</li>
+                          <li> <img src="img/iconoCorreo.svg" width="30" height="30" alt="email"/><a class="auto-generated-link" data-auto-recognition="true" data-content="contacto@indianapolis.cl" href="mailto:contacto@indianapolis.cl" data-type="mail">contacto@indianapolis.cl</a></li>
+                        </ul>
+                  </div>
+                  <div class="col-4">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24901.74192868733!2d-72.58769396946455!3d-38.72428890323726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d38a7a876c55%3A0xaf9c089828629a7a!2sSERVICIO+T%C3%89CNICO+INDIANAPOLIS!5e0!3m2!1ses!2scl!4v1555445252945!5m2!1ses!2scl" style="border:0; width:100%; height: 100%;" allowfullscreen></iframe>
+                    </div>
+                  <div class="col-4">
+                      <img src="img/imgContactoAuto.svg" style="width:100%; height:260px;" alt=""/> 
+                      <span>
+                        VEN A CONOCER NUESTRO <br>
+                        SERVICIO AUTOMOTRIZ<br>
+                      </span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Linea footer -->
+              <div class="linea-footer"></div>
+
+              <div class="footer">
+                  <div class="container first footer">
+                  <div class="row">
+                    <div class="col">
+                        <p><img src="img/logoDirFooter.svg" width="35" height="60" alt=""/> Rudecindo Ortega #01039 Temuco</p>
+
+                        <span>Developed by <a href="www.endbox.cl" target="_blank" >Endbox</a>. Desinged by <a href="www.behance.net/cartesjoaq1a60" target="_blank">Jáuken</a> 2019 Ⓒ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
 
 
 <!-- JQuery -->
