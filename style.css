@@ -4,7 +4,29 @@
         left: 70%;
         transform: translatex(-70%);
     }
+    .carousel-item{
+        height: 100vh;
+    }
 }
+
+@media (max-width: 992px){
+    .carousel-item{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-item{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 576px){
+    .carousel-item{
+        height: 25vh;
+    }
+}
+
 body{
     background: #070707;
 
@@ -41,16 +63,11 @@ a:link {
     background: rgba(230, 0, 0, 0.801) !important;
 }
 
-.carousel-item{
-    height: 100vh;
-}
-
 .linea-footer{
     background: #E60000;
     width: 100%;
     height: 10px;
 }
-
 
  .bg-red{
      background: #E60000;
