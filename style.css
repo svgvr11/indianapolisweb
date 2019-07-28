@@ -6,7 +6,7 @@
     }
 }
 body{
-    background: black;
+    background: #070707;
 
 }
 
@@ -16,7 +16,7 @@ a:link {
 }
 
 .first{
-    background:black;
+    background:#070707;
     color: #fff;
     text-align: center;
     padding-top: 2%;
