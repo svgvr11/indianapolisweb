@@ -37,16 +37,17 @@ a:link {
 	color: aliceblue;
 }
 
+a:visited {
+	text-decoration: none;
+	color: aliceblue;
+}
+
 .first{
     background:#070707;
     color: #fff;
     text-align: center;
     padding-top: 2%;
 }
-
-/* div [class|="col"]{
-    border:3px solid #E60000;
-} */
 
 .gris{
     background: rgba(230, 0, 0, 0.075);
@@ -83,10 +84,3 @@ a:link {
 
 }
 
-.footer span {
-	text-align: center;
-	font-size: 0.9rem;
-	line-height: 0em;
-	margin-bottom: 10px;
-
-}
