@@ -49,6 +49,10 @@ a:visited {
     padding-top: 2%;
 }
 
+.a-left{
+    text-align: left;
+}
+
 .gris{
     background: rgba(230, 0, 0, 0.075);
 }
