@@ -25,6 +25,11 @@
     .carousel-item{
         height: 25vh;
     }
+
+    .logo-mobile{
+        width: 130;
+        height: 16;
+    }
 }
 
 body{
